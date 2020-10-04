@@ -89,3 +89,8 @@ def index():
 
 . . .
 
+. . .
+
+@app.route('/create', methods=('GET', 'POST'))
+def create():
+    return render_template('create.html')
