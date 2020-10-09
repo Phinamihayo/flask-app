@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,26 +7,17 @@
 <body>
    <h1>Welcome to FlaskBlog</h1>
 </body>
-</html>
+</html> -->
 
 
-. . .
-h1 {
-    border: 2px #eee solid;
-    color: brown;
-    text-align: center;
-    padding: 10px;
-}
-    <meta charset="UTF-8">
+<!-- <head>
+   <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
-    <title>FlaskBlog</title>
-    style.css
-. . .
-{% extends 'base.html' %}
+   <title>FlaskBlog</title>
+</head> -->
 
-{% block content %}
-    <h1>{% block title %} Welcome to FlaskBlog {% endblock %}</h1>
-{% endblock %}{% extends 'base.html' %}
+
+{% extends 'base.html' %}
 
 {% block content %}
     <h1>{% block title %} Welcome to FlaskBlog {% endblock %}</h1>
@@ -38,4 +29,5 @@ h1 {
         <hr>
     {% endfor %}
 {% endblock %}
+
 
