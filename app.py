@@ -55,7 +55,7 @@ def index():
 
 
 # app = Flask(__name__)
-# app.config['SECRET_KEY'] = 'your secret key'
+# app.config['SECRET_KEY'] = '8888888888Jo'
 
 
 # @app.route('/')
@@ -66,25 +66,28 @@ def index():
 #     return render_template('index.html', posts=posts)
 
 
-# #@app.route('/create', methods=('GET', 'POST'))
-# #def create():
-# #    return render_template('create.html')
+@app.route('/create', methods=('GET', 'POST'))
+def create():
+     return render_template('create.html')
 
     
 # @app.route('/create', methods=('GET', 'POST'))
 # def create():
 #     if request.method == 'POST':
-#         title = request.form['title']
-#         content = request.form['content']
+#          title = request.form['title']
+#          content = request.form['content']
 
-#         if not title:
-#             flash('Title is required!')
-#         else:
-#             conn = get_db_connection()
-#             conn.execute('INSERT INTO posts (title, content) VALUES (?, ?)',
-#                          (title, content))
-#             conn.commit()
-#             conn.close()
-#             return redirect(url_for('index'))
+#          if not title:
+#              flash('Title is required!')
+#          else:
+#              conn = get_db_connection()
+#              conn.execute('INSERT INTO posts (title, content) VALUES (?, ?)',
+#                           (title, content))
+#              conn.commit()
+#              conn.close()
+#              return redirect(url_for('index'))
 
 #     return render_template('create.html')
+
+
+
