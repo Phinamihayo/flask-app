@@ -17,10 +17,19 @@
 </head> -->
 
 
+
 {% extends 'base.html' %}
 
 {% block content %}
     <h1>{% block title %} Welcome to FlaskBlog {% endblock %}</h1>
+{% endblock %}
+
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block titxle %} Welcome to FlaskBlog {% endblock %}</h1>
     {% for post in posts %}
         <a href="#">
             <h2>{{ post['title'] }}</h2>
